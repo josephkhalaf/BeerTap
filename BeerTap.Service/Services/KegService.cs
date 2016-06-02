@@ -25,17 +25,17 @@ namespace BeerTap.Service.Services
 
         public void Update(Keg domainModel)
         {
-            _db.Kegs.AddOrUpdate(o => o.KegId, domainModel);
+            _db.Kegs.AddOrUpdate(o => o.Id, domainModel);
 
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
             var entity = _db.Kegs.Find(id);
             _db.Kegs.Remove(entity);
         }
 
-        public Keg Get(Guid id)
+        public Keg Get(int id)
         {
             return _db.Kegs.Find(id);
         }

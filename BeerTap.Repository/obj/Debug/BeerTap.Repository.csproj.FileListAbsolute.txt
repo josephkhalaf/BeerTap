@@ -11,3 +11,15 @@ C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repo
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.Migrations.Initial.resources
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.csproj.GenerateResource.Cache
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.Migrations.AddOfficeIdKeg.resources
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Repository.dll.config
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Repository.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Repository.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\EntityFramework.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\EntityFramework.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.csprojResolveAssemblyReference.cache
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.Migrations.initial.resources
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.csproj.GenerateResource.Cache

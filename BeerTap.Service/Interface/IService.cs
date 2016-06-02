@@ -7,8 +7,8 @@ namespace BeerTap.Service.Interface
     {
         void Insert(T domainModel);
         void Update(T domainModel);
-        void Delete(Guid id);
-        T Get(Guid id);
+        void Delete(int id);
+        T Get(int id);
         IEnumerable<T> GetAll();
     }
 }

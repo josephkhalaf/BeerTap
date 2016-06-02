@@ -59,7 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Keg.cs" />
+    <Compile Include="KegState.cs" />
     <Compile Include="LinkRelations.cs" />
+    <Compile Include="Office.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleResource.cs" />
   </ItemGroup>

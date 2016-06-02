@@ -1,5 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Data.Entity.Migrations;
+using System.Linq;
+using BeerTap.Repository.Context;
 using BeerTap.Repository.Model;
 using BeerTap.Service.Interface;
 
@@ -7,29 +9,39 @@ namespace BeerTap.Service.Services
 {
     public class OfficeService : IService<Office>
     {
+        private readonly BeerTapContext _db;
+
+        public OfficeService()
+        {
+            _db = new BeerTapContext();
+        }
+
         public void Insert(Office domainModel)
         {
-            throw new NotImplementedException();
+            _db.Offices.Add(domainModel);
+            _db.SaveChanges();
         }
 
         public void Update(Office domainModel)
         {
-            throw new NotImplementedException();
+            _db.Offices.AddOrUpdate(o => o.Id, domainModel);
+
         }
 
-        public void Delete(Guid id)
+        public void Delete(int id)
         {
-            throw new NotImplementedException();
+            var entity = _db.Offices.Find(id);
+            _db.Offices.Remove(entity);
         }
 
-        public Office Get(Guid id)
+        public Office Get(int id)
         {
-            throw new NotImplementedException();
+            return _db.Offices.Find(id);
         }
 
         public IEnumerable<Office> GetAll()
         {
-            throw new NotImplementedException();
+            return _db.Offices.ToList();
         }
     }
 }

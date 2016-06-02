@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BeerTap.Repository</RootNamespace>
     <AssemblyName>BeerTap.Repository</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -50,13 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\BeerTapContext.cs" />
-    <Compile Include="Migrations\201605270344387_Initial.cs" />
-    <Compile Include="Migrations\201605270344387_Initial.Designer.cs">
-      <DependentUpon>201605270344387_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201605300047250_AddOfficeIdKeg.cs" />
-    <Compile Include="Migrations\201605300047250_AddOfficeIdKeg.Designer.cs">
-      <DependentUpon>201605300047250_AddOfficeIdKeg.cs</DependentUpon>
+    <Compile Include="Migrations\201606020542259_initial.cs" />
+    <Compile Include="Migrations\201606020542259_initial.Designer.cs">
+      <DependentUpon>201606020542259_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Keg.cs" />
@@ -68,11 +65,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201605270344387_Initial.resx">
-      <DependentUpon>201605270344387_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605300047250_AddOfficeIdKeg.resx">
-      <DependentUpon>201605300047250_AddOfficeIdKeg.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201606020542259_initial.resx">
+      <DependentUpon>201606020542259_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

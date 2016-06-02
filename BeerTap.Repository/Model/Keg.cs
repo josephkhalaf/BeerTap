@@ -1,8 +1,13 @@
-﻿namespace BeerTap.Repository.Model
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BeerTap.Repository.Model
 {
     public class Keg
     {
-        public int KegId { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         public int Size { get; set; }
         public int OfficeId { get; set; }
         public Office Office { get; set; }

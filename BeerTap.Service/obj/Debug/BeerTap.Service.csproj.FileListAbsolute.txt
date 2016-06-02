@@ -1,0 +1,12 @@
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Service.dll.config
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Service.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Service.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Repository.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\EntityFramework.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Repository.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\EntityFramework.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.csprojResolveAssemblyReference.cache
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.pdb
