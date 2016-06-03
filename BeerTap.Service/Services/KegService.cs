@@ -44,5 +44,12 @@ namespace BeerTap.Service.Services
         {
             return _db.Kegs.ToList();
         }
+
+        public void GetBeer(int kegId, int sizeInMl)
+        {
+            var keg = this.Get(kegId);
+            keg.Size = keg.Size - sizeInMl;
+            this.Update(keg);
+        }
     }
 }

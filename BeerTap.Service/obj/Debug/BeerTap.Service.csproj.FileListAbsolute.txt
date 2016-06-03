@@ -10,3 +10,11 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\Enti
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\obj\Debug\BeerTap.Service.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Model.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\IQ.Platform.Framework.WebApi.Model.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\IQ.Platform.Framework.Common.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\Newtonsoft.Json.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Model.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\BeerTap.Model.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\IQ.Platform.Framework.WebApi.Model.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Service\bin\Debug\Newtonsoft.Json.xml

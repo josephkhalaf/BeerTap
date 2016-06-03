@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetBeer.cs" />
     <Compile Include="Keg.cs" />
     <Compile Include="KegState.cs" />
     <Compile Include="LinkRelations.cs" />

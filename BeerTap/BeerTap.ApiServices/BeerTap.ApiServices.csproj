@@ -175,9 +175,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetBeerApiService.cs" />
     <Compile Include="IDomainServiceResolver.cs" />
+    <Compile Include="Interface\IKegApiService.cs" />
     <Compile Include="Interface\IOfficeApiService.cs" />
     <Compile Include="ISampleApiService.cs" />
+    <Compile Include="KegApiService.cs" />
     <Compile Include="LinksParametersSource.cs" />
     <Compile Include="OfficeApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

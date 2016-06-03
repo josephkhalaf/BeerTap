@@ -10,5 +10,8 @@
         /// </summary>
         public const string SampleResource = "iq:SampleResource";
         public const string Office = "iq:Office";
+        public const string Keg = "iq:Keg";
+        public const string GetBeer = "iq:GetBeer";
+        public const string ReplaceKeg = "iq:ReplaceKeg";
     }
 }

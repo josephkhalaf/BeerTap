@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BeerTap.Model
+﻿namespace BeerTap.Model
 {
     public enum KegState
     {
-        New,
-        GoinDown,
-        AlmostEmpty,
-        SheIsDryMate
+        New = 1,
+        GoinDown = 2,
+        AlmostEmpty = 3,
+        SheIsDryMate = 4
     }
 }

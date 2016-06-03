@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201606020542259_initial.Designer.cs">
       <DependentUpon>201606020542259_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606030050541_AddKegState.cs" />
+    <Compile Include="Migrations\201606030050541_AddKegState.Designer.cs">
+      <DependentUpon>201606030050541_AddKegState.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Keg.cs" />
     <Compile Include="Model\Office.cs" />
@@ -68,6 +72,15 @@
     <EmbeddedResource Include="Migrations\201606020542259_initial.resx">
       <DependentUpon>201606020542259_initial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606030050541_AddKegState.resx">
+      <DependentUpon>201606030050541_AddKegState.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeerTap\BeerTap.Model\BeerTap.Model.csproj">
+      <Project>{F1BE99C5-041C-4366-9E74-0AD3632A8611}</Project>
+      <Name>BeerTap.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

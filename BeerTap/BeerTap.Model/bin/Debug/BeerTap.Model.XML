@@ -4,6 +4,11 @@
         <name>BeerTap.Model</name>
     </assembly>
     <members>
+        <member name="T:BeerTap.Model.GetBeer">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:BeerTap.Model.LinkRelations">
             <summary>
             iQmetrix link relation names

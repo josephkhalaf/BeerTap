@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -15,7 +13,7 @@ namespace BeerTap.ApiServices
 {
     public class OfficeApiService : IOfficeApiService
     {
-        private OfficeService _officeService;
+        private readonly OfficeService _officeService;
 
         public OfficeApiService()
         {
@@ -30,25 +28,23 @@ namespace BeerTap.ApiServices
             {
                 return Task.FromResult(resourceOffice);
             }
-            else
-            {
-                throw context.CreateHttpResponseException<Office>($"The office does not exist", HttpStatusCode.NotFound);
-            }
+
+            throw context.CreateHttpResponseException<Office>($"The office does not exist", HttpStatusCode.NotFound);
         }
 
         public Task<IEnumerable<Office>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
         {
             var offices = _officeService.GetAll();
 
+            if(offices.Any())
+            { 
             var resourceOffice = offices.Select(office => Mapper.Map<Office>(office)).ToList();
 
 
             return Task.FromResult(resourceOffice.AsEnumerable());
-        }
 
-        public Task<ResourceCreationResult<Office, int>> CreateAsync(Office resource, IRequestContext context, CancellationToken cancellation)
-        {
-            throw new NotImplementedException();
+            }
+            throw context.CreateHttpResponseException<Office>($"The offices do not exist", HttpStatusCode.NotFound);
         }
     }
 }

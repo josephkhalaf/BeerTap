@@ -23,3 +23,12 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\B
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.Migrations.initial.resources
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.csproj.GenerateResource.Cache
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Model.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\IQ.Platform.Framework.WebApi.Model.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\IQ.Platform.Framework.Common.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Model.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\BeerTap.Model.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\IQ.Platform.Framework.WebApi.Model.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap.Repository\obj\Debug\BeerTap.Repository.Migrations.AddKegState.resources
