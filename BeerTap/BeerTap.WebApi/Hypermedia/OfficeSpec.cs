@@ -13,7 +13,7 @@ namespace BeerTap.WebApi.Hypermedia
     public class OfficeSpec : SingleStateResourceSpec<Office, int>
     {
 
-        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Office({id})");
+        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({id})");
 
         public override string EntrypointRelation
         {

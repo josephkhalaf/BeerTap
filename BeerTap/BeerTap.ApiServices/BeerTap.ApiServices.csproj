@@ -184,6 +184,7 @@
     <Compile Include="LinksParametersSource.cs" />
     <Compile Include="OfficeApiService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceKegApiService.cs" />
     <Compile Include="Security\ApiClient.cs" />
     <Compile Include="Security\AuthenticationFailedException.cs" />
     <Compile Include="Security\BeerTapApiUser.cs" />

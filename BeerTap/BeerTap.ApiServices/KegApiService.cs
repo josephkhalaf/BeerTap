@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -25,11 +23,10 @@ namespace BeerTap.ApiServices
 
         public Task<Keg> GetAsync(int id, IRequestContext context, CancellationToken cancellation)
         {
-            var officeId =
-                context.UriParameters.GetByName<string>("OfficeId")
-                    .EnsureValueIsPresent(() =>
-                            context.CreateHttpResponseException<Keg>("The personID must be supplied in the URI",
-                                HttpStatusCode.BadRequest));
+            var uri = context.UriParameters;
+            var officeId = context.UriParameters.GetByName<int>("OfficeId")
+                .EnsureValueIsPresent(() => context.CreateHttpResponseException<Keg>("The office id must be supplied in the URI", HttpStatusCode.BadRequest));
+
             var keg = _kegService.Get(id);
             var resourceKeg = Mapper.Map<Keg>(keg);
             if (keg != null)

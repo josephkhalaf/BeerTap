@@ -39,6 +39,14 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="IQ.Platform.Framework.Common, Version=3.22.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IQ.Platform.Framework.Common.3.22.1\lib\portable-win+net40+sl50+wp80\IQ.Platform.Framework.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -59,6 +67,10 @@
     <ProjectReference Include="..\BeerTap.Repository\BeerTap.Repository.csproj">
       <Project>{B7705079-D19E-4240-ABF7-DFA99BDFFB42}</Project>
       <Name>BeerTap.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeerTap\BeerTap.Model\BeerTap.Model.csproj">
+      <Project>{F1BE99C5-041C-4366-9E74-0AD3632A8611}</Project>
+      <Name>BeerTap.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

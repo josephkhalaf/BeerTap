@@ -9,7 +9,7 @@ namespace BeerTap.WebApi.Hypermedia
 {
     public class GetBeerSpec : SingleStateResourceSpec<GetBeer, int>
     {
-        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({OfficeId})/Keg({Id})/GetBeer");
+        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({OfficeId})/Kegs({KegId})/GetBeer");
 
         public override string EntrypointRelation
         {
@@ -18,21 +18,26 @@ namespace BeerTap.WebApi.Hypermedia
 
         protected override IEnumerable<ResourceLinkTemplate<GetBeer>> Links()
         {
-            yield return CreateLinkTemplate<LinksParametersSource>(CommonLinkRelations.Self, Uri, x => x.Parameters.OfficeId, x => x.Parameters.KegId);
+            yield return CreateLinkTemplate<LinksParametersSource>(CommonLinkRelations.Self, Uri, c => c.Parameters.OfficeId, c => c.Parameters.KegId);
         }
 
         public override IResourceStateSpec<GetBeer, NullState, int> StateSpec
         {
             get
             {
-                return
-                    new SingleStateSpec<GetBeer, int>
+                return new SingleStateSpec<GetBeer, int>
+                {
+                    Links =
                     {
-                        Operations =
-                        {
-                            InitialPost = ServiceOperations.Create
-                        }
-                    };
+                        CreateLinkTemplate(LinkRelations.Keg, KegSpec.Uri,c => c.OfficeId, c => c.Id)
+                    },
+                    Operations =
+                    {
+                        //Post = ServiceOperations.Update,
+                        //Put = ServiceOperations.Update
+                        InitialPost = ServiceOperations.Create
+                    }
+                };
             }
         }
     }

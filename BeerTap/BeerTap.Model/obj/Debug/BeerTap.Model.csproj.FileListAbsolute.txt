@@ -19,4 +19,3 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debu
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Model\bin\Debug\Newtonsoft.Json.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Model\obj\Debug\BeerTap.Model.csprojResolveAssemblyReference.cache

@@ -88,8 +88,6 @@ C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\Bee
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.dll
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.csproj.App.config
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\AutoMapper.Net4.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\BeerTap.ApiServices.dll.config
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\BeerTap.ApiServices.dll
@@ -182,5 +180,7 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bi
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\ru\System.Spatial.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\zh-Hans\System.Spatial.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.csproj.App.config
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.ApiServices\obj\Debug\BeerTap.ApiServices.pdb

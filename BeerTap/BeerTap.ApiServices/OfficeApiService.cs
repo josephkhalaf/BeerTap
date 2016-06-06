@@ -38,10 +38,8 @@ namespace BeerTap.ApiServices
 
             if(offices.Any())
             { 
-            var resourceOffice = offices.Select(office => Mapper.Map<Office>(office)).ToList();
-
-
-            return Task.FromResult(resourceOffice.AsEnumerable());
+                var resourceOffice = offices.Select(office => Mapper.Map<Office>(office)).ToList();
+                return Task.FromResult(resourceOffice.AsEnumerable());
 
             }
             throw context.CreateHttpResponseException<Office>($"The offices do not exist", HttpStatusCode.NotFound);

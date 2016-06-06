@@ -169,8 +169,11 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTes
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Http.OData.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Http.WebHost.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\xunit.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Service.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Repository.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Documentation.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\IQ.Platform.Framework.WebApi.HelpGen.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\EntityFramework.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Mvc.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Razor.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.WebPages.Razor.dll
@@ -212,7 +215,10 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTes
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Http.OData.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Http.WebHost.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\xunit.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Service.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Repository.pdb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Documentation.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\EntityFramework.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Mvc.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.Razor.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.WebPages.Razor.xml
@@ -222,9 +228,3 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTes
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Service.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Repository.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\EntityFramework.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Service.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\BeerTap.Repository.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\EntityFramework.xml

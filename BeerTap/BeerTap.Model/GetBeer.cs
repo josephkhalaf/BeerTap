@@ -10,5 +10,6 @@ namespace BeerTap.Model
     {
         public int Id { get; set; }
         public int Size { get; set; }
+        public int OfficeId { get; set; }
     }
 }

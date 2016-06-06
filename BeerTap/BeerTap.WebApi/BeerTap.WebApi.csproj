@@ -301,6 +301,7 @@
     <Compile Include="Hypermedia\KegSpec.cs" />
     <Compile Include="Hypermedia\KegStateProvider.cs" />
     <Compile Include="Hypermedia\OfficeSpec.cs" />
+    <Compile Include="Hypermedia\ReplaceKegSpec.cs" />
     <Compile Include="Hypermedia\SampleSpec.cs" />
     <Compile Include="Infrastructure\BootStrapper.cs" />
     <Compile Include="Infrastructure\DefaultApiContainer.cs" />

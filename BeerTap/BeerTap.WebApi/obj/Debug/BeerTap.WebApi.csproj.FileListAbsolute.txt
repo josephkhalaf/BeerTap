@@ -150,10 +150,13 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Aut
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.ApiServices.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Documentation.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Model.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Repository.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\CacheCow.Common.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\CacheCow.Server.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Castle.Core.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Castle.Windsor.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.SqlServer.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\FSharp.Core.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\IQ.Auth.OAuth2.AccessTokenFormatting.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\IQ.Auth.OAuth2.ProtectedResource.dll
@@ -206,6 +209,8 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Sys
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.Deployment.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Service.dll
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Repository.pdb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.ApiServices.pdb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Model.pdb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Model.xml
@@ -215,6 +220,8 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Cac
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\CacheCow.Server.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Castle.Core.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Castle.Windsor.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.SqlServer.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\FSharp.Core.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\IQ.Platform.Framework.WebApi.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\IQ.Platform.Framework.WebApi.CorsHelpers.xml
@@ -245,6 +252,7 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Sys
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.Deployment.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Service.pdb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\de\Microsoft.Data.Edm.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\es\Microsoft.Data.Edm.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\fr\Microsoft.Data.Edm.resources.dll
@@ -276,11 +284,3 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Deb
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Service.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Repository.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Service.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\BeerTap.Repository.pdb
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.xml
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.SqlServer.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\EntityFramework.SqlServer.xml
