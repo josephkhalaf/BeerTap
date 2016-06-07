@@ -13,6 +13,7 @@ using IQ.Platform.Framework.WebApi.Security;
 using IQ.Platform.Framework.WebApi.Services.Installers;
 using IQ.Platform.Framework.WebApi.Services.Security;
 using BeerTap.ApiServices;
+using BeerTap.ApiServices.Interface;
 using BeerTap.ApiServices.Security;
 using BeerTap.Documentation.Installers;
 using BeerTap.WebApi.Handlers;
@@ -28,8 +29,8 @@ namespace BeerTap.WebApi.Infrastructure
     {
 
         readonly IDomainServiceResolver _domainServiceResolver;
-        readonly Assembly _apiDomainServicesAssembly = typeof(ISampleApiService).Assembly;
-        readonly Assembly _resourceMappersAssembly = typeof(SampleApiService).Assembly;
+        readonly Assembly _apiDomainServicesAssembly = typeof(IOfficeApiService).Assembly;
+        readonly Assembly _resourceMappersAssembly = typeof(OfficeApiService).Assembly;
 
 
         public DefaultApiContainer(HttpConfiguration configuration, IWindsorContainer windsorContainer, IDomainServiceResolver domainServiceResolver = null)
@@ -39,9 +40,9 @@ namespace BeerTap.WebApi.Infrastructure
         }
 
         public override Assembly ResourceAssembly { get { return typeof(LinkRelations).Assembly; } }
-        protected override Assembly ResourceSpecsAssembly { get { return typeof(SampleSpec).Assembly; } }
-        protected override Assembly ResourceStateProvidersAssembly { get { return typeof(SampleSpec).Assembly; } }
-        protected override Assembly ApiAppServicesAssembly { get { return typeof(SampleApiService).Assembly; } }
+        protected override Assembly ResourceSpecsAssembly { get { return typeof(OfficeSpec).Assembly; } }
+        protected override Assembly ResourceStateProvidersAssembly { get { return typeof(OfficeSpec).Assembly; } }
+        protected override Assembly ApiAppServicesAssembly { get { return typeof(OfficeApiService).Assembly; } }
 
 
         protected override void RegisterCustomDependencies()

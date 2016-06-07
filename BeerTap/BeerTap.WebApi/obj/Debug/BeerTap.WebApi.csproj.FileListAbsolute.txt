@@ -137,6 +137,8 @@ C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.dll
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csproj.App.config
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\AutoMapper.Net4.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Web.config
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\Web.Debug.config
@@ -280,7 +282,5 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\ko\
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\ru\System.Spatial.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csproj.App.config
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.WebApi\obj\Debug\BeerTap.WebApi.pdb

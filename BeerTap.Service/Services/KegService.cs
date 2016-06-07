@@ -3,6 +3,7 @@ using System.Data.Entity.Migrations;
 using System.Linq;
 using BeerTap.Model;
 using BeerTap.Repository.Context;
+using BeerTap.Service.Constant;
 using BeerTap.Service.Interface;
 using Keg = BeerTap.Repository.Model.Keg;
 
@@ -17,10 +18,12 @@ namespace BeerTap.Service.Services
             _db = new BeerTapContext();
         }
 
-        public void Insert(Keg domainModel)
+        public int Insert(Keg domainModel)
         {
             _db.Kegs.Add(domainModel);
             _db.SaveChanges();
+
+            return domainModel.Id;
         }
 
         public void Update(Keg domainModel)
@@ -56,7 +59,7 @@ namespace BeerTap.Service.Services
 
         private KegState? GetKegStatus(int size)
         {
-            if (size == 20000)
+            if (size == KegConstant.NewKegSize)
                 return KegState.New;
 
             if (size >= 5000 && size <= 19999)
@@ -74,7 +77,7 @@ namespace BeerTap.Service.Services
         public void ReplaceKeg(int officeId, int kegId)
         {
             var keg = _db.Kegs.FirstOrDefault(o => o.OfficeId == officeId && o.Id == kegId);
-            keg.Size = 20000;
+            keg.Size = KegConstant.NewKegSize;
             keg.KegState = KegState.New;
             this.Update(keg);
             _db.SaveChanges();

@@ -175,11 +175,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddKegApiService.cs" />
     <Compile Include="GetBeerApiService.cs" />
     <Compile Include="IDomainServiceResolver.cs" />
     <Compile Include="Interface\IKegApiService.cs" />
     <Compile Include="Interface\IOfficeApiService.cs" />
-    <Compile Include="ISampleApiService.cs" />
     <Compile Include="KegApiService.cs" />
     <Compile Include="LinksParametersSource.cs" />
     <Compile Include="OfficeApiService.cs" />
@@ -188,7 +188,6 @@
     <Compile Include="Security\ApiClient.cs" />
     <Compile Include="Security\AuthenticationFailedException.cs" />
     <Compile Include="Security\BeerTapApiUser.cs" />
-    <Compile Include="SampleApiService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BeerTap.Repository\BeerTap.Repository.csproj">

@@ -5,7 +5,7 @@ namespace BeerTap.Service.Interface
 {
     public interface IService<T>
     {
-        void Insert(T domainModel);
+        int Insert(T domainModel);
         void Update(T domainModel);
         void Delete(int id);
         T Get(int id);

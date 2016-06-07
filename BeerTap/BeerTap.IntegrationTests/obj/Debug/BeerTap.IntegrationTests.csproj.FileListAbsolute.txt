@@ -110,6 +110,8 @@ C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debu
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.dll
 C:\Users\joseph.khalaf\Desktop\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csproj.App.config
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\AutoMapper.Net4.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\Web.config
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\Web.Debug.config
@@ -224,7 +226,5 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTes
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.WebPages.xml
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csproj.App.config
-C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.csprojResolveAssemblyReference.cache
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.IntegrationTests\obj\Debug\BeerTap.IntegrationTests.pdb

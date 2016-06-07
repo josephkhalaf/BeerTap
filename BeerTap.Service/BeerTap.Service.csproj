@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constant\KegConstant.cs" />
     <Compile Include="Interface\IService.cs" />
     <Compile Include="Services\OfficeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

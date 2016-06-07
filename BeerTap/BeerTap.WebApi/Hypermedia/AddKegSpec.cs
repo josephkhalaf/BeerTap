@@ -7,26 +7,26 @@ using IQ.Platform.Framework.WebApi.Model.Hypermedia;
 
 namespace BeerTap.WebApi.Hypermedia
 {
-    public class GetBeerSpec : SingleStateResourceSpec<GetBeer, int>
+    public class AddKegSpec : SingleStateResourceSpec<AddKeg, int>
     {
-        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({OfficeId})/Kegs({KegId})/GetBeer");
+        public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({OfficeId})/AddKeg");
 
         public override string EntrypointRelation
         {
-            get { return LinkRelations.GetBeer; }
+            get { return LinkRelations.AddKeg; }
         }
 
-        protected override IEnumerable<ResourceLinkTemplate<GetBeer>> Links()
+        protected override IEnumerable<ResourceLinkTemplate<AddKeg>> Links()
         {
-            yield return CreateLinkTemplate<LinksParametersSource>(CommonLinkRelations.Self, Uri, x => x.Parameters.OfficeId, x => x.Parameters.KegId);
+            yield return CreateLinkTemplate<LinksParametersSource>(CommonLinkRelations.Self, Uri, x => x.Parameters.OfficeId);
         }
 
-        public override IResourceStateSpec<GetBeer, NullState, int> StateSpec
+        public override IResourceStateSpec<AddKeg, NullState, int> StateSpec
         {
             get
             {
                 return
-                    new SingleStateSpec<GetBeer, int>
+                    new SingleStateSpec<AddKeg, int>
                     {
                         Links =
                         {

@@ -13,5 +13,6 @@
         public const string Keg = "iq:Keg";
         public const string GetBeer = "iq:GetBeer";
         public const string ReplaceKeg = "iq:ReplaceKeg";
+        public const string AddKeg = "iq:AddKeg";
     }
 }

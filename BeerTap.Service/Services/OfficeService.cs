@@ -16,10 +16,12 @@ namespace BeerTap.Service.Services
             _db = new BeerTapContext();
         }
 
-        public void Insert(Office domainModel)
+        public int Insert(Office domainModel)
         {
             _db.Offices.Add(domainModel);
             _db.SaveChanges();
+
+            return domainModel.Id;
         }
 
         public void Update(Office domainModel)
