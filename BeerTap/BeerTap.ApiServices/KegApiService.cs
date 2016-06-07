@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,7 +14,7 @@ namespace BeerTap.ApiServices
 {
     public class KegApiService : IKegApiService
     {
-        private KegService _kegService;
+        private readonly KegService _kegService;
 
         public KegApiService()
         {
@@ -23,23 +23,34 @@ namespace BeerTap.ApiServices
 
         public Task<Keg> GetAsync(int id, IRequestContext context, CancellationToken cancellation)
         {
-            var uri = context.UriParameters;
             var officeId = context.UriParameters.GetByName<int>("OfficeId")
-                .EnsureValueIsPresent(() => context.CreateHttpResponseException<Keg>("The office id must be supplied in the URI", HttpStatusCode.BadRequest));
+                .EnsureValueIsPresent(() => context.CreateHttpResponseException<Keg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
 
-            var keg = _kegService.Get(id);
-            var resourceKeg = Mapper.Map<Keg>(keg);
+            var keg = _kegService.GetKegByOfficeIdKegId(officeId, id);
+            
             if (keg != null)
             {
+                var resourceKeg = Mapper.Map<Keg>(keg);
                 return Task.FromResult(resourceKeg);
             }
 
-            throw context.CreateHttpResponseException<Office>($"The keg does not exist", HttpStatusCode.NotFound);
+            throw context.CreateHttpResponseException<Keg>("The keg does not exist", HttpStatusCode.NotFound);
         }
 
         public Task<IEnumerable<Keg>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
         {
-            throw new NotImplementedException();
+            var officeId = context.UriParameters.GetByName<int>("OfficeId")
+                .EnsureValueIsPresent(() => context.CreateHttpResponseException<Keg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
+
+            var kegs = _kegService.GetKegsById(officeId);
+
+            if (kegs.Any())
+            {
+                var resourceKegs = kegs.Select(keg => Mapper.Map<Keg>(keg)).ToList();
+                return Task.FromResult(resourceKegs.AsEnumerable());
+            }
+
+            throw context.CreateHttpResponseException<Keg>("The kegs do not exist", HttpStatusCode.NotFound);
         }
     }
 }

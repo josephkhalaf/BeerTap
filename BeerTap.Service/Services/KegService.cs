@@ -82,5 +82,16 @@ namespace BeerTap.Service.Services
             this.Update(keg);
             _db.SaveChanges();
         }
+
+        public Keg GetKegByOfficeIdKegId(int officeId, int kegId)
+        {
+            return _db.Kegs.FirstOrDefault(o => o.OfficeId == officeId && o.Id == kegId);
+        }
+
+        public IEnumerable<Keg> GetKegsById(int officeId)
+        {
+            return GetAll().Where(o => o.OfficeId == officeId).ToList();
+
+        }
     }
 }

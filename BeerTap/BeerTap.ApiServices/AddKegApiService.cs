@@ -11,31 +11,40 @@ namespace BeerTap.ApiServices
 {
     public class AddKegApiService : ICreateAResourceAsync<AddKeg, int>
     {
-        private KegService _kegService;
+        private readonly KegService _kegService;
+        private readonly OfficeService _officeService;
+
 
         public AddKegApiService()
         {
             _kegService = new KegService();
+            _officeService = new OfficeService();
         }
 
         public Task<ResourceCreationResult<AddKeg, int>> CreateAsync(AddKeg resource, IRequestContext context, CancellationToken cancellation)
         {
             var officeId = context.UriParameters.GetByName<int>("OfficeId")
-                .EnsureValue(() => context.CreateHttpResponseException<Keg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
-            var newKeg = new Repository.Model.Keg()
+                .EnsureValue(() => context.CreateHttpResponseException<AddKeg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
+
+            var office = _officeService.Get(officeId);
+            if (office != null)
             {
-                OfficeId = officeId,
-                KegState = KegState.New,
-                Size = KegConstant.NewKegSize
-            };
-            var newKegId = _kegService.Insert(newKeg);
+                var newKeg = new Repository.Model.Keg()
+                {
+                    OfficeId = officeId,
+                    KegState = KegState.New,
+                    Size = KegConstant.NewKegSize
+                };
+                var newKegId = _kegService.Insert(newKeg);
 
-            context.LinkParameters.Set(new LinksParametersSource(officeId, newKegId));
-            resource.OfficeId = officeId;
-            resource.Id = newKegId;
+                context.LinkParameters.Set(new LinksParametersSource(officeId, newKegId));
+                resource.OfficeId = officeId;
+                resource.Id = newKegId;
 
+                return Task.FromResult(new ResourceCreationResult<AddKeg, int>(resource));
+            }
 
-            return Task.FromResult(new ResourceCreationResult<AddKeg, int>(resource));
+            throw context.CreateHttpResponseException<AddKeg>("The office does not exist", HttpStatusCode.NotFound);        
         }
     }
 }

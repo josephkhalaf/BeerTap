@@ -8,7 +8,6 @@ namespace BeerTap.WebApi.Hypermedia
 {
     public class KegSpec : ResourceSpec<Keg, KegState, int>
     {
-
         public static ResourceUriTemplate Uri = ResourceUriTemplate.Create("Offices({OfficeId})/Kegs({id})");
 
         public override string EntrypointRelation
@@ -31,7 +30,7 @@ namespace BeerTap.WebApi.Hypermedia
                 },
                 Operations =
                 {
-                       Get=ServiceOperations.Get 
+                        Get=ServiceOperations.Get 
                 }
 
             };
@@ -48,32 +47,31 @@ namespace BeerTap.WebApi.Hypermedia
 
             };
 
-            //yield return new ResourceStateSpec<Keg, KegState, int>(KegState.AlmostEmpty)
-            //{
-            //    Links =
-            //    {
-            //        CreateLinkTemplate(LinkRelations.GetBeer, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id ),
-            //        CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
-            //    },
-            //    Operations =
-            //    {
-            //           Get=ServiceOperations.Get,
-            //    }
+            yield return new ResourceStateSpec<Keg, KegState, int>(KegState.AlmostEmpty)
+            {
+                Links =
+                {
+                    CreateLinkTemplate(LinkRelations.GetBeer, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id ),
+                    CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
+                },
+                Operations =
+                {
+                       Get=ServiceOperations.Get
+                }
 
-            //};
+            };
 
-            //yield return new ResourceStateSpec<Keg, KegState, int>(KegState.AlmostEmpty)
-            //{
-            //    Links =
-            //    {
-            //        CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
-            //    },
-            //    Operations =
-            //    {
-            //           Get=ServiceOperations.Get,
-            //    }
-
-            //};
+            yield return new ResourceStateSpec<Keg, KegState, int>(KegState.SheIsDryMate)
+            {
+                Links =
+                {
+                    CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
+                },
+                Operations =
+                {
+                       Get=ServiceOperations.Get
+                }
+            };
         }
     }
 }

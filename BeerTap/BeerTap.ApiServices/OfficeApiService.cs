@@ -23,13 +23,14 @@ namespace BeerTap.ApiServices
         public Task<Office> GetAsync(int id, IRequestContext context, CancellationToken cancellation)
         {
             var office = _officeService.Get(id);
-            var resourceOffice = Mapper.Map<Office>(office);
+
             if (office != null)
             {
+                var resourceOffice = Mapper.Map<Office>(office);
                 return Task.FromResult(resourceOffice);
             }
 
-            throw context.CreateHttpResponseException<Office>($"The office does not exist", HttpStatusCode.NotFound);
+            throw context.CreateHttpResponseException<Office>("The office does not exist", HttpStatusCode.NotFound);
         }
 
         public Task<IEnumerable<Office>> GetManyAsync(IRequestContext context, CancellationToken cancellation)
@@ -40,9 +41,9 @@ namespace BeerTap.ApiServices
             { 
                 var resourceOffice = offices.Select(office => Mapper.Map<Office>(office)).ToList();
                 return Task.FromResult(resourceOffice.AsEnumerable());
-
             }
-            throw context.CreateHttpResponseException<Office>($"The offices do not exist", HttpStatusCode.NotFound);
+
+            throw context.CreateHttpResponseException<Office>("The offices do not exist", HttpStatusCode.NotFound);
         }
     }
 }

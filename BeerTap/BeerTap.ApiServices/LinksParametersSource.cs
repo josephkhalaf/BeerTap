@@ -10,10 +10,7 @@
             OfficeId = officeId;
             KegId = kegId;
         }
-
         public int OfficeId { get; private set; }
         public int KegId { get; private set; }
-
-
     }
 }
