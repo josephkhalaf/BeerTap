@@ -19,18 +19,26 @@ namespace BeerTap.ApiServices
         public Task<ResourceCreationResult<ReplaceKeg, int>> CreateAsync(ReplaceKeg resource, IRequestContext context, CancellationToken cancellation)
         {
             var kegId = context.UriParameters.GetByName<int>("KegId")
-                .EnsureValue(() => context.CreateHttpResponseException<Keg>("The Keg Id must be supplied in the URI", HttpStatusCode.BadRequest));
+                .EnsureValue(() => context.CreateHttpResponseException<ReplaceKeg>("The Keg Id must be supplied in the URI", HttpStatusCode.BadRequest));
 
             var officeId = context.UriParameters.GetByName<int>("OfficeId")
-                .EnsureValue(() => context.CreateHttpResponseException<Keg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
+                .EnsureValue(() => context.CreateHttpResponseException<ReplaceKeg>("The Office Id must be supplied in the URI", HttpStatusCode.BadRequest));
 
-            context.LinkParameters.Set(new LinksParametersSource(officeId, kegId));
-            
-            _kegService.ReplaceKeg(officeId, kegId);
 
-            resource.Id = kegId;
-            resource.OfficeId = officeId;
-            return Task.FromResult(new ResourceCreationResult<ReplaceKeg, int>(resource));
+            var keg = _kegService.GetKegByOfficeIdKegId(officeId, kegId);
+
+            if (keg != null)
+            {
+                _kegService.ReplaceKeg(officeId, kegId);
+                context.LinkParameters.Set(new LinksParametersSource(officeId, kegId));
+                resource.Id = kegId;
+                resource.OfficeId = officeId;
+
+                return Task.FromResult(new ResourceCreationResult<ReplaceKeg, int>(resource));
+            }
+
+            throw context.CreateHttpResponseException<ReplaceKeg>("The keg does not exist", HttpStatusCode.NotFound);
+
         }
     }
 }

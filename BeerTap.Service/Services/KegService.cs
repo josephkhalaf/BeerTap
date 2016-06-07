@@ -52,6 +52,10 @@ namespace BeerTap.Service.Services
         {
             var keg = _db.Kegs.FirstOrDefault(o => o.OfficeId == officeId && o.Id == kegId);
             keg.Size = keg.Size - sizeInMl;
+
+            if (keg.Size < 0)
+                keg.Size = 0;
+
             keg.KegState = GetKegStatus(keg.Size).GetValueOrDefault();
             this.Update(keg);
             _db.SaveChanges();
