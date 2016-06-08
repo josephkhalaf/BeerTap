@@ -66,10 +66,10 @@ namespace BeerTap.Service.Services
             if (size == KegConstant.NewKegSize)
                 return KegState.New;
 
-            if (size >= 5000 && size <= 19999)
+            if (size >= KegConstant.GoinDownBottom && size <= KegConstant.GoinDownTop)
                 return KegState.GoinDown;
 
-            if(size >= 1 && size <= 4999)
+            if(size >= KegConstant.AlmostEmptyBottom && size <= KegConstant.AlmostEmptyTop)
                 return KegState.AlmostEmpty;
 
             if(size == 0)
