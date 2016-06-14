@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using BeerTap.Model;
-using BeerTap.Service.Constant;
 using BeerTap.Service.Services;
 using IQ.Platform.Framework.Common;
 using IQ.Platform.Framework.WebApi;
@@ -29,13 +28,7 @@ namespace BeerTap.ApiServices
             var office = _officeService.Get(officeId);
             if (office != null)
             {
-                var newKeg = new Repository.Model.Keg()
-                {
-                    OfficeId = officeId,
-                    KegState = KegState.New,
-                    Size = KegConstant.NewKegSize
-                };
-                var newKegId = _kegService.Insert(newKeg);
+                var newKegId = _kegService.AddKeg(officeId);
 
                 context.LinkParameters.Set(new LinksParametersSource(officeId, newKegId));
                 resource.OfficeId = officeId;

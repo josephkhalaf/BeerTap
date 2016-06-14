@@ -11,7 +11,6 @@ namespace BeerTap.ApiServices
     public class ReplaceKegApiService : ICreateAResourceAsync<ReplaceKeg, int>
     {
         private KegService _kegService;
-
         public ReplaceKegApiService()
         {
             _kegService = new KegService();
@@ -38,7 +37,6 @@ namespace BeerTap.ApiServices
             }
 
             throw context.CreateHttpResponseException<ReplaceKeg>("The keg does not exist", HttpStatusCode.NotFound);
-
         }
     }
 }

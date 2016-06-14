@@ -56,12 +56,12 @@ namespace BeerTap.Service.Services
             if (keg.Size < 0)
                 keg.Size = 0;
 
-            keg.KegState = GetKegStatus(keg.Size).GetValueOrDefault();
+            keg.KegState = GetKegStatus(keg.Size);
             this.Update(keg);
             _db.SaveChanges();
         }
 
-        private KegState? GetKegStatus(int size)
+        private KegState GetKegStatus(int size)
         {
             if (size == KegConstant.NewKegSize)
                 return KegState.New;
@@ -72,10 +72,7 @@ namespace BeerTap.Service.Services
             if(size >= KegConstant.AlmostEmptyBottom && size <= KegConstant.AlmostEmptyTop)
                 return KegState.AlmostEmpty;
 
-            if(size == 0)
-                return KegState.SheIsDryMate;
-
-            return null;
+            return KegState.SheIsDryMate;
         }
 
         public void ReplaceKeg(int officeId, int kegId)
@@ -96,6 +93,18 @@ namespace BeerTap.Service.Services
         {
             return GetAll().Where(o => o.OfficeId == officeId).ToList();
 
+        }
+
+        public int AddKeg(int officeId)
+        {
+            var newKeg = new Keg()
+            {
+                OfficeId = officeId,
+                KegState = KegState.New,
+                Size = KegConstant.NewKegSize
+            };
+
+            return Insert(newKeg);
         }
     }
 }
