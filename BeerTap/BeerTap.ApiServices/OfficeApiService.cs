@@ -22,6 +22,7 @@ namespace BeerTap.ApiServices
 
         public Task<Office> GetAsync(int id, IRequestContext context, CancellationToken cancellation)
         {
+
             var office = _officeService.Get(id);
 
             if (office != null)

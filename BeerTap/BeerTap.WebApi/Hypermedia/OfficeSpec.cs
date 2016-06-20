@@ -28,7 +28,8 @@ namespace BeerTap.WebApi.Hypermedia
                 {
                     Links =
                     {
-                        CreateLinkTemplate(LinkRelations.AddKeg, AddKegSpec.Uri, c => c.Id)
+                        CreateLinkTemplate(LinkRelations.AddKeg, AddKegSpec.Uri, c => c.Id),
+                        CreateLinkTemplate(LinkRelations.Keg, KegSpec.Uri.Many, c => c.Id)
                     },
                     Operations =
                     {

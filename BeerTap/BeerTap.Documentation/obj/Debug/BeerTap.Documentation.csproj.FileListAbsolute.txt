@@ -175,3 +175,4 @@ C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Documentation\
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Documentation\obj\Debug\BeerTap.Documentation.csproj.App.config
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Documentation\obj\Debug\BeerTap.Documentation.dll
 C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Documentation\obj\Debug\BeerTap.Documentation.pdb
+C:\Users\joseph.khalaf\Documents\Projects\BeerTap\BeerTap\BeerTap.Documentation\obj\Debug\BeerTap.Documentation.csprojResolveAssemblyReference.cache

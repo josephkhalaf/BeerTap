@@ -52,7 +52,7 @@ namespace BeerTap.WebApi.Hypermedia
                 Links =
                 {
                     CreateLinkTemplate(LinkRelations.GetBeer, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id ),
-                    CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
+                    CreateLinkTemplate(LinkRelations.ReplaceKeg, ReplaceKegSpec.Uri,c => c.OfficeId, c => c.Id )
                 },
                 Operations =
                 {
@@ -65,7 +65,7 @@ namespace BeerTap.WebApi.Hypermedia
             {
                 Links =
                 {
-                    CreateLinkTemplate(LinkRelations.ReplaceKeg, GetBeerSpec.Uri,c => c.OfficeId, c => c.Id )
+                    CreateLinkTemplate(LinkRelations.ReplaceKeg, ReplaceKegSpec.Uri,c => c.OfficeId, c => c.Id )
                 },
                 Operations =
                 {
