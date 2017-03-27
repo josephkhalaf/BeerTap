@@ -308,6 +308,7 @@
     <Compile Include="Infrastructure\Installers\ResourceMapperInstaller.cs" />
     <Compile Include="Infrastructure\Installers\DomainServicesInstaller.cs" />
     <Compile Include="Infrastructure\CustomPingResourceFactory.cs" />
+    <Compile Include="NewFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\AlwaysAuthenticateRequestAuthenticator .cs" />
   </ItemGroup>
